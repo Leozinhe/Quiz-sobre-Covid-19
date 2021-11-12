@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #00c5bb;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 0;
+}
+
+h1 {
+    color: rgb(0, 0, 0);
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.question {
+    font-style: italic;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    padding: 20px;
+    margin: 0 20px;
+}
+
+input[type="radio"] {
+    opacity: 0;
+    height: 0;
+}
+
+label {
+    color: white;
+    background-color: #000000;
+    border-radius: 4px;
+    text-align: left;
+    padding: 10px;
+}
+
+label:hover {
+    filter: blur(1px);
+    cursor: pointer;
+}
+
+button {
+    color: white;
+    background-color: #000000;
+    border-radius: 2px;
+    border: none;
+    font-size: 20px;
+    padding: 5px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #87FFB9;
+}
+
+.score {
+    color: black;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 3px;
+    margin-right: 20px;
+}
+
+section {
+    background-color: #00c5bb;
+    padding: 20px;
+    font-style: normal;
+    margin-bottom: 20px;
+}
+
+aside {
+    padding: 20px;
+    font-size: 18px;
+    margin: 10px 20%;
+}
+
+.final-score {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.final-aside {
+    font-style: italic;
+}
+
+input[type="radio"]:checked + label {
+    background-color: #87FFB9;
+    color: black;
+}
+
+.button-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+@media screen and (min-width: 600px) {
+    form {
+        width: 600px;
+        display: inline-block;
+    }
+}
